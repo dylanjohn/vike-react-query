@@ -1,5 +1,6 @@
 import React from 'react'
 import { Counter } from './Counter.js'
+import { Movies } from './Movies.js'
 
 export default function Page() {
   return (
@@ -12,6 +13,7 @@ export default function Page() {
           Interactive. <Counter />
         </li>
       </ul>
+      <Movies />
     </>
   )
 }
