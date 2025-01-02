@@ -59,9 +59,9 @@ const Movie = withFallback(
 async function getStarWarsMovie(id: string): Promise<MovieDetails> {
   //await new Promise((r) => setTimeout(r, 500))
 
-  if (Math.random() > 0.4) {
-    throw new Error('Failed to fetch')
-  }
+  // if (Math.random() > 0.4) {
+  //   throw new Error('Failed to fetch')
+  // }
 
   const response = await fetch(`https://star-wars.brillout.com/api/films/${id}.json`)
   return response.json()
